@@ -54,3 +54,4 @@ C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\refint\lt
 C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ltdl.pdb
 C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ltdl.genruntimeconfig.cache
 C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ref\ltdl.dll
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ltdl.sourcelink.json
