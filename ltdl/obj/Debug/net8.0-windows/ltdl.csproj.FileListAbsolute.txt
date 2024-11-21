@@ -1,0 +1,56 @@
+C:\Users\ADMIN\source\repos\ltdl\ltdl\bin\Debug\net8.0-windows\ltdl.exe
+C:\Users\ADMIN\source\repos\ltdl\ltdl\bin\Debug\net8.0-windows\ltdl.deps.json
+C:\Users\ADMIN\source\repos\ltdl\ltdl\bin\Debug\net8.0-windows\ltdl.runtimeconfig.json
+C:\Users\ADMIN\source\repos\ltdl\ltdl\bin\Debug\net8.0-windows\ltdl.dll
+C:\Users\ADMIN\source\repos\ltdl\ltdl\bin\Debug\net8.0-windows\ltdl.pdb
+C:\Users\ADMIN\source\repos\ltdl\ltdl\obj\Debug\net8.0-windows\ltdl.Properties.Resources.resources
+C:\Users\ADMIN\source\repos\ltdl\ltdl\obj\Debug\net8.0-windows\ltdl.csproj.GenerateResource.cache
+C:\Users\ADMIN\source\repos\ltdl\ltdl\obj\Debug\net8.0-windows\ltdl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\source\repos\ltdl\ltdl\obj\Debug\net8.0-windows\ltdl.AssemblyInfoInputs.cache
+C:\Users\ADMIN\source\repos\ltdl\ltdl\obj\Debug\net8.0-windows\ltdl.AssemblyInfo.cs
+C:\Users\ADMIN\source\repos\ltdl\ltdl\obj\Debug\net8.0-windows\ltdl.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\ltdl\ltdl\obj\Debug\net8.0-windows\ltdl.dll
+C:\Users\ADMIN\source\repos\ltdl\ltdl\obj\Debug\net8.0-windows\refint\ltdl.dll
+C:\Users\ADMIN\source\repos\ltdl\ltdl\obj\Debug\net8.0-windows\ltdl.pdb
+C:\Users\ADMIN\source\repos\ltdl\ltdl\obj\Debug\net8.0-windows\ltdl.genruntimeconfig.cache
+C:\Users\ADMIN\source\repos\ltdl\ltdl\obj\Debug\net8.0-windows\ref\ltdl.dll
+C:\Users\ADMIN\source\repos\ltdl\ltdl\obj\Debug\net8.0-windows\ltdl.InputWeight.resources
+C:\Users\ADMIN\source\repos\ltdl\ltdl\obj\Debug\net8.0-windows\ltdl.Main.resources
+C:\Users\ADMIN\source\repos\ltdt\ltdl\bin\Debug\net8.0-windows\ltdl.exe
+C:\Users\ADMIN\source\repos\ltdt\ltdl\bin\Debug\net8.0-windows\ltdl.deps.json
+C:\Users\ADMIN\source\repos\ltdt\ltdl\bin\Debug\net8.0-windows\ltdl.runtimeconfig.json
+C:\Users\ADMIN\source\repos\ltdt\ltdl\bin\Debug\net8.0-windows\ltdl.dll
+C:\Users\ADMIN\source\repos\ltdt\ltdl\bin\Debug\net8.0-windows\ltdl.pdb
+C:\Users\ADMIN\source\repos\ltdt\ltdl\obj\Debug\net8.0-windows\ltdl.InputWeight.resources
+C:\Users\ADMIN\source\repos\ltdt\ltdl\obj\Debug\net8.0-windows\ltdl.Form1.resources
+C:\Users\ADMIN\source\repos\ltdt\ltdl\obj\Debug\net8.0-windows\ltdl.Main.resources
+C:\Users\ADMIN\source\repos\ltdt\ltdl\obj\Debug\net8.0-windows\ltdl.Properties.Resources.resources
+C:\Users\ADMIN\source\repos\ltdt\ltdl\obj\Debug\net8.0-windows\ltdl.csproj.GenerateResource.cache
+C:\Users\ADMIN\source\repos\ltdt\ltdl\obj\Debug\net8.0-windows\ltdl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\source\repos\ltdt\ltdl\obj\Debug\net8.0-windows\ltdl.AssemblyInfoInputs.cache
+C:\Users\ADMIN\source\repos\ltdt\ltdl\obj\Debug\net8.0-windows\ltdl.AssemblyInfo.cs
+C:\Users\ADMIN\source\repos\ltdt\ltdl\obj\Debug\net8.0-windows\ltdl.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\ltdt\ltdl\obj\Debug\net8.0-windows\ltdl.dll
+C:\Users\ADMIN\source\repos\ltdt\ltdl\obj\Debug\net8.0-windows\refint\ltdl.dll
+C:\Users\ADMIN\source\repos\ltdt\ltdl\obj\Debug\net8.0-windows\ltdl.pdb
+C:\Users\ADMIN\source\repos\ltdt\ltdl\obj\Debug\net8.0-windows\ltdl.genruntimeconfig.cache
+C:\Users\ADMIN\source\repos\ltdt\ltdl\obj\Debug\net8.0-windows\ref\ltdl.dll
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\bin\Debug\net8.0-windows\ltdl.exe
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\bin\Debug\net8.0-windows\ltdl.deps.json
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\bin\Debug\net8.0-windows\ltdl.runtimeconfig.json
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\bin\Debug\net8.0-windows\ltdl.dll
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\bin\Debug\net8.0-windows\ltdl.pdb
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ltdl.InputWeight.resources
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ltdl.Form1.resources
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ltdl.Main.resources
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ltdl.Properties.Resources.resources
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ltdl.csproj.GenerateResource.cache
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ltdl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ltdl.AssemblyInfoInputs.cache
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ltdl.AssemblyInfo.cs
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ltdl.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ltdl.dll
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\refint\ltdl.dll
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ltdl.pdb
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ltdl.genruntimeconfig.cache
+C:\Users\ADMIN\source\repos\Graph Theory\ltdl\obj\Debug\net8.0-windows\ref\ltdl.dll
