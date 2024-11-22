@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace test_dijkstra_c_
+namespace ltdl
 {
-    internal class pair
+    internal class Pair
     {
         int _iValue1, _iValue2;
 
-       public pair(int iValue1, int iValue2)
+        public Pair(int iValue1, int iValue2)
         {
             _iValue1 = iValue1;
             _iValue2 = iValue2;
@@ -28,5 +28,4 @@ namespace test_dijkstra_c_
             set { _iValue2 = value; }
         }
     }
-
 }

@@ -62,7 +62,9 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            // đoạn test.
+            dijkstra.result(0, 4);
+            richTextBox1.Text = $"các quốc gia đi qua: {dijkstra._strPath}\nchi phí ít nhất phải trả: {dijkstra._strMoneyMin}";
         }
 
         private void ptbMyanmar_Click(object sender, EventArgs e)
@@ -78,12 +80,7 @@
 
         private void ptbQuocGia_Click(object sender, EventArgs e)
         {
-            if (u != -1)
-            {
-                this.v = 2;
-                SaveVerticalClick();
-            }
-            else this.u = 2;
+
 
         }
 
@@ -176,6 +173,21 @@
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ptbThailand_Click_1(object sender, EventArgs e)
+        {
+            if (u != -1)
+            {
+                this.v = 2;
+                SaveVerticalClick();
+            }
+            else this.u = 2;
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

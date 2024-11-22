@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ltdl")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+106f63a226ea070b9a8afee5c3716b75b5836dcb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46064059316cebe7b8c858301890119ce87f07d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ltdl")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ltdl")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
