@@ -41,6 +41,8 @@
             ptbLao = new PictureBox();
             pictureBox1 = new PictureBox();
             ptbQuocGia = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptbMyanmar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ptbThailand).BeginInit();
@@ -53,10 +55,14 @@
             ((System.ComponentModel.ISupportInitialize)ptbLao).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ptbQuocGia).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Controls.Add(pictureBox3);
+            panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(button1);
             panel1.Location = new Point(1, 0);
             panel1.Name = "panel1";
@@ -82,6 +88,7 @@
             ptbMyanmar.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbMyanmar.TabIndex = 52;
             ptbMyanmar.TabStop = false;
+            ptbMyanmar.Click += ptbMyanmar_Click;
             // 
             // ptbThailand
             // 
@@ -102,6 +109,7 @@
             ptbCampudia.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbCampudia.TabIndex = 51;
             ptbCampudia.TabStop = false;
+            ptbCampudia.Click += ptbCampudia_Click;
             // 
             // ptbSingapore
             // 
@@ -112,6 +120,7 @@
             ptbSingapore.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbSingapore.TabIndex = 56;
             ptbSingapore.TabStop = false;
+            ptbSingapore.Click += ptbSingapore_Click;
             // 
             // ptbIndonesia
             // 
@@ -122,6 +131,7 @@
             ptbIndonesia.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbIndonesia.TabIndex = 55;
             ptbIndonesia.TabStop = false;
+            ptbIndonesia.Click += ptbIndonesia_Click;
             // 
             // ptbMalaysia
             // 
@@ -132,6 +142,7 @@
             ptbMalaysia.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbMalaysia.TabIndex = 54;
             ptbMalaysia.TabStop = false;
+            ptbMalaysia.Click += ptbMalaysia_Click;
             // 
             // ptbBrunei
             // 
@@ -142,6 +153,7 @@
             ptbBrunei.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbBrunei.TabIndex = 53;
             ptbBrunei.TabStop = false;
+            ptbBrunei.Click += ptbBrunei_Click;
             // 
             // ptbPhilippines
             // 
@@ -152,6 +164,7 @@
             ptbPhilippines.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbPhilippines.TabIndex = 49;
             ptbPhilippines.TabStop = false;
+            ptbPhilippines.Click += ptbPhilippines_Click;
             // 
             // ptbLao
             // 
@@ -162,6 +175,7 @@
             ptbLao.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbLao.TabIndex = 48;
             ptbLao.TabStop = false;
+            ptbLao.Click += ptbLao_Click;
             // 
             // pictureBox1
             // 
@@ -172,6 +186,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 47;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click_2;
             // 
             // ptbQuocGia
             // 
@@ -182,6 +197,29 @@
             ptbQuocGia.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbQuocGia.TabIndex = 46;
             ptbQuocGia.TabStop = false;
+            ptbQuocGia.Click += ptbQuocGia_Click;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.tru;
+            pictureBox2.Location = new Point(38, 173);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(93, 66);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 53;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.cong;
+            pictureBox3.InitialImage = Properties.Resources.cong;
+            pictureBox3.Location = new Point(26, 68);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(92, 66);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 54;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // Form1
             // 
@@ -216,6 +254,8 @@
             ((System.ComponentModel.ISupportInitialize)ptbLao).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)ptbQuocGia).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
@@ -234,5 +274,7 @@
         private PictureBox pictureBox1;
         private PictureBox ptbQuocGia;
         private Button button1;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
     }
 }

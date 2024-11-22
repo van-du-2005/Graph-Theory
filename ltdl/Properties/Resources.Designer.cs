@@ -93,6 +93,16 @@ namespace ltdl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cong {
+            get {
+                object obj = ResourceManager.GetObject("cong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap indonesia {
             get {
                 object obj = ResourceManager.GetObject("indonesia", resourceCulture);
@@ -166,6 +176,16 @@ namespace ltdl.Properties {
         internal static System.Drawing.Bitmap thaiLan {
             get {
                 object obj = ResourceManager.GetObject("thaiLan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tru {
+            get {
+                object obj = ResourceManager.GetObject("tru", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

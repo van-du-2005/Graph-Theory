@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.JavaScript;
 using System.Text;
 using System.Threading.Tasks;
+using test_dijkstra_c_;
 
 namespace ltdl
 {
@@ -14,16 +15,16 @@ namespace ltdl
         private List<(int, int)>[] _adijacencyList; // chúa danh sách các cạnh kề có trọng số.
 
         // hàm khởi vớ parameter là số đỉnh của đồ thị.
-        public Dijkstra(int iNumVertices) 
+        public Dijkstra(int iNumVertices)
         {
             _iNumVertices = iNumVertices;
 
             _adijacencyList = new List<(int, int)>[_iNumVertices];
-            for(int i=0; i < _iNumVertices; ++i)
+            for (int i = 0; i < _iNumVertices; ++i)
             {
                 _adijacencyList[i] = new List<(int, int)>();
-            }    
-            
+            }
+
         }
 
         // thêm cạnh, và trọng số vào danh sách kề.
@@ -32,21 +33,21 @@ namespace ltdl
             _adijacencyList[u].Add((v, weight));
         }
 
-        public int[] dijkstra(int s)
+        public pair[] dijkstra(int s)
         {
-            int[] result = new int[_iNumVertices]; // mảng lưu lại khoảng cách min từ đỉnh s đến 1 đỉnh khác trong đồ thị.
+            pair[] result = new pair[_iNumVertices]; // lưu distance min và đỉnh pre.
             int[] visited = new int[_iNumVertices]; // đánh dấu các đỉnh đã thăm.
 
             for (int i = 0; i < _iNumVertices; ++i)
             {
-                result[i] = int.MinValue;
+                result[i] = new pair(int.MaxValue, i);
                 visited[i] = 0;
             }
-            result[s] = 0;
+            result[s] = new pair(0, s);
 
             var pq = new SortedSet<(int distance, int vertices)>();
             pq.Add((0, s));
-            while(pq.Count > 0)
+            while (pq.Count > 0)
             {
                 var current = pq.First();
                 pq.Remove(current);
@@ -54,36 +55,57 @@ namespace ltdl
                 int currentVertex = current.vertices;
                 int currentDistance = current.distance;
 
+
                 if (visited[currentVertex] == 1) continue;
 
-                foreach(var (v, weight) in _adijacencyList[currentVertex])
+                foreach (var (v, weight) in _adijacencyList[currentVertex])
                 {
                     int newDistance = currentDistance + weight;
-                    if(newDistance < result[v])
+                    if (newDistance < result[v].Value1)
                     {
-                        result[v] = newDistance;
-                    } 
+                        result[v].Value1 = newDistance;
+                        result[v].Value2 = currentVertex;
+                    }
 
                     pq.Add((newDistance, v));
-                        
                 }
 
                 visited[currentVertex] = 1;
-            }    
+            }
 
             return result;
 
         }
 
-        public void result(int s)
+        public void result(int s, int e)
         {
-            int[] distance = dijkstra(s);
+            pair[] pathAnDistance = dijkstra(s);
 
-            for (int i = 0; i < distance.Length; ++i)
+            List<int> p = new List<int>();
+
+            if (pathAnDistance[e].Value2 != e)
             {
-                Console.WriteLine($"dinh: {i}, khoang cach {distance[i]}\n");
-            } 
-                
+                p.Add(e);
+                int pre = pathAnDistance[e].Value2;
+                while (pre != s)
+                {
+                    p.Add(pre);
+                    pre = pathAnDistance[pre].Value2;
+                }
+                p.Add(pre);
+
+                string path = "";
+                p.Reverse();
+                for (int i = 0; i < p.Count; ++i)
+                {
+                    path = (i == p.Count - 1) ? path + $"{p[i]}" : path + $"{p[i]}->";
+                }
+
+                Console.WriteLine(pathAnDistance[e].Value1);
+                Console.WriteLine(path);
+            }
+            else Console.WriteLine("khong co duong di");
+
         }
     }
 }

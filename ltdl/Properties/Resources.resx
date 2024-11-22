@@ -118,43 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="philipin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\philipin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brunei" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brunei.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\cong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thaiLan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\thaiLan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VN.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="singaporo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\singaporo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lao.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campuchia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campuchia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="att.xlh1WsFPL9e8CyI1gDhXtStnp6VinrWfa7-qAM3Sz8M" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\att.xlh1WsFPL9e8CyI1gDhXtStnp6VinrWfa7-qAM3Sz8M.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quocgia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quocgia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="indonesia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\indonesia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myanmar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\myanmar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="malaysia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\malaysia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Untitled-2-1024x576" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled-2-1024x576.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="brunei" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\brunei.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="thaiLan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\thaiLan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lao.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="myanmar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\myanmar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="indonesia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\indonesia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="att.xlh1WsFPL9e8CyI1gDhXtStnp6VinrWfa7-qAM3Sz8M" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\att.xlh1WsFPL9e8CyI1gDhXtStnp6VinrWfa7-qAM3Sz8M.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="VN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VN.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="philipin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\philipin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="campuchia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\campuchia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="singaporo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\singaporo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quocgia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\quocgia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tru" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\tru.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

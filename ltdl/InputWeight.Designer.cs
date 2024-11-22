@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             button1 = new Button();
-            richTextBox1 = new RichTextBox();
+            textChiPhi = new RichTextBox();
             label1 = new Label();
             button2 = new Button();
             SuspendLayout();
@@ -44,17 +44,18 @@
             button1.TabIndex = 0;
             button1.Text = "YES";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // richTextBox1
+            // textChiPhi
             // 
-            richTextBox1.BackColor = Color.White;
-            richTextBox1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            richTextBox1.Location = new Point(141, 21);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(220, 41);
-            richTextBox1.TabIndex = 1;
-            richTextBox1.Text = "";
-            richTextBox1.TextChanged += richTextBox1_TextChanged;
+            textChiPhi.BackColor = Color.White;
+            textChiPhi.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            textChiPhi.Location = new Point(141, 21);
+            textChiPhi.Name = "textChiPhi";
+            textChiPhi.Size = new Size(220, 41);
+            textChiPhi.TabIndex = 1;
+            textChiPhi.Text = "";
+            textChiPhi.TextChanged += richTextBox1_TextChanged;
             // 
             // label1
             // 
@@ -86,19 +87,20 @@
             ClientSize = new Size(373, 131);
             Controls.Add(button2);
             Controls.Add(label1);
-            Controls.Add(richTextBox1);
+            Controls.Add(textChiPhi);
             Controls.Add(button1);
             MinimizeBox = false;
             Name = "InputWeight";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Nhập Phí";
+            Load += InputWeight_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button button1;
-        private RichTextBox richTextBox1;
+        private RichTextBox textChiPhi;
         private Label label1;
         private Button button2;
     }
