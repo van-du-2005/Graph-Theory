@@ -135,7 +135,7 @@ namespace ltdl
 
             List<int> p = new List<int>();
 
-            if (pathAnDistance[e].Value2 != e)
+            if (pathAnDistance[e].Value1 != int.MaxValue)
             {
                 p.Add(e);
                 int pre = pathAnDistance[e].Value2;

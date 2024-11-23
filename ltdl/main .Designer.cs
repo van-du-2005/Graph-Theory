@@ -250,6 +250,7 @@
             Controls.Add(ptbVietNam);
             Controls.Add(ptbQuocGia);
             Controls.Add(panel1);
+            MaximizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Load += Form1_Load;
