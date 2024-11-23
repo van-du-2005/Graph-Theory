@@ -90,7 +90,6 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 54;
             pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox2
             // 
@@ -132,7 +131,7 @@
             ptbThailand.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbThailand.TabIndex = 50;
             ptbThailand.TabStop = false;
-            ptbThailand.Click += ptbThailand_Click_1;
+            ptbThailand.Click += ptbThailand_Click;
             // 
             // ptbCampudia
             // 
@@ -220,7 +219,7 @@
             ptbVietNam.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbVietNam.TabIndex = 47;
             ptbVietNam.TabStop = false;
-            ptbVietNam.Click += pictureBox1_Click_2;
+            ptbVietNam.Click += ptbVietNam_Click;
             // 
             // ptbQuocGia
             // 
@@ -231,7 +230,6 @@
             ptbQuocGia.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbQuocGia.TabIndex = 46;
             ptbQuocGia.TabStop = false;
-            ptbQuocGia.Click += ptbQuocGia_Click;
             // 
             // Form1
             // 
@@ -254,7 +252,6 @@
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Load += Form1_Load;
-            Paint += Form1_Paint;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

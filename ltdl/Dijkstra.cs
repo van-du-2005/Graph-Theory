@@ -90,11 +90,11 @@ namespace ltdl
             }
             else if (iNum == 1)
             {
-                strCountry = "Myanmar";
+                strCountry = "Thailand";
             }
             else if (iNum == 2)
             {
-                strCountry = "Thailand";
+                strCountry = "Myanmar";
             }
             else if (iNum == 3)
             {

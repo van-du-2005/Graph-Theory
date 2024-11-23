@@ -54,7 +54,7 @@
             textChiPhi.Name = "textChiPhi";
             textChiPhi.Size = new Size(220, 41);
             textChiPhi.TabIndex = 1;
-            textChiPhi.Text = "";
+            textChiPhi.Text = "0";
             textChiPhi.TextChanged += richTextBox1_TextChanged;
             // 
             // label1
