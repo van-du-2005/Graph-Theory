@@ -7,7 +7,7 @@
         int x1, y1;
         int x2, y2;
         private List<LocationXY> locations = new List<LocationXY>();
-
+        StartAndDestinationSelection _startAndDestinationSelection;
 
         public Form1()
         {
@@ -18,6 +18,7 @@
             this.v = -1;
             this.w = int.MaxValue;
             this.ptbQuocGia.Paint += new System.Windows.Forms.PaintEventHandler(this.PTBQuocGia_Paint);
+            _startAndDestinationSelection = new StartAndDestinationSelection();
         }
 
         private void reset()
@@ -78,8 +79,17 @@
         private void ptbVietNam_Click(object sender, EventArgs e) { UpdateCoordinates(7); }
         private void button1_Click(object sender, EventArgs e)
         {
-            dijkstra.result(0, 4);
-            richTextBox1.Text = $"các quốc gia đi qua: {dijkstra._strPath}\nchi phí ít nhất phải trả: {dijkstra._strMoneyMin}";
+            int start = _startAndDestinationSelection.Start;
+            int destination = _startAndDestinationSelection.Destination;
+            if (start == -1 || destination == -1)
+            {
+                MessageBox.Show("Bạn chưa chọn điểm bắt đầu hoặc điểm điểm của chuyến du lịch.");
+            }
+            else
+            {
+                dijkstra.result(start, destination);
+                richTextBox1.Text = $"các quốc gia đi qua: {dijkstra._strPath}\nchi phí ít nhất phải trả: {dijkstra._strMoneyMin}";
+            }
         }
 
         private void PTBQuocGia_Paint(object sender, PaintEventArgs e)
@@ -106,6 +116,16 @@
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void ptbQuocGia_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStartAndDestination_Click(object sender, EventArgs e)
+        {
+            _startAndDestinationSelection.ShowDialog();
         }
     }
 }

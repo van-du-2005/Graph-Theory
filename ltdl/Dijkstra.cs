@@ -33,6 +33,7 @@ namespace ltdl
         public void addEdges(int u, int v, int weight)
         {
             _adijacencyList[u].Add((v, weight));
+            _adijacencyList[v].Add((u, weight));
         }
 
         public Pair[] dijkstra(int s)

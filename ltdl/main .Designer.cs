@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            richTextBox1 = new RichTextBox();
+            btnStartAndDestination = new Button();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             btnResult = new Button();
+            richTextBox1 = new RichTextBox();
             ptbMyanmar = new PictureBox();
             ptbThailand = new PictureBox();
             ptbCampudia = new PictureBox();
@@ -62,29 +63,34 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(richTextBox1);
+            panel1.Controls.Add(btnStartAndDestination);
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(btnResult);
+            panel1.Controls.Add(richTextBox1);
             panel1.Location = new Point(1, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(181, 736);
             panel1.TabIndex = 12;
             // 
-            // richTextBox1
+            // btnStartAndDestination
             // 
-            richTextBox1.Location = new Point(3, 0);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(169, 232);
-            richTextBox1.TabIndex = 55;
-            richTextBox1.Text = "";
-            richTextBox1.TextChanged += richTextBox1_TextChanged;
+            btnStartAndDestination.BackColor = Color.Silver;
+            btnStartAndDestination.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnStartAndDestination.ForeColor = Color.Black;
+            btnStartAndDestination.Location = new Point(3, 398);
+            btnStartAndDestination.Name = "btnStartAndDestination";
+            btnStartAndDestination.Size = new Size(169, 61);
+            btnStartAndDestination.TabIndex = 56;
+            btnStartAndDestination.Text = "chọn điểm xuất phát và điểm đến";
+            btnStartAndDestination.UseVisualStyleBackColor = false;
+            btnStartAndDestination.Click += btnStartAndDestination_Click;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.cong;
             pictureBox3.InitialImage = Properties.Resources.cong;
-            pictureBox3.Location = new Point(59, 485);
+            pictureBox3.Location = new Point(109, 578);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(92, 66);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -94,7 +100,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.tru;
-            pictureBox2.Location = new Point(11, 485);
+            pictureBox2.Location = new Point(10, 561);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(93, 66);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -103,13 +109,26 @@
             // 
             // btnResult
             // 
-            btnResult.Location = new Point(-3, 241);
+            btnResult.BackColor = Color.Silver;
+            btnResult.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnResult.ForeColor = Color.Black;
+            btnResult.Location = new Point(3, 331);
             btnResult.Name = "btnResult";
-            btnResult.Size = new Size(175, 29);
+            btnResult.Size = new Size(169, 61);
             btnResult.TabIndex = 0;
             btnResult.Text = "result";
-            btnResult.UseVisualStyleBackColor = true;
+            btnResult.UseVisualStyleBackColor = false;
             btnResult.Click += button1_Click;
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            richTextBox1.Location = new Point(3, 0);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(169, 325);
+            richTextBox1.TabIndex = 55;
+            richTextBox1.Text = "";
+            richTextBox1.TextChanged += richTextBox1_TextChanged;
             // 
             // ptbMyanmar
             // 
@@ -287,5 +306,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private RichTextBox richTextBox1;
+        private Button btnStartAndDestination;
     }
 }
