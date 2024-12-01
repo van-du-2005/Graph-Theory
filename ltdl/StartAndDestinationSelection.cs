@@ -67,7 +67,7 @@ namespace ltdl
             if(_istart == -1 || _iDestination == -1)
             {
                 DialogResult result = MessageBox.Show(
-                    "bạn chưa chọn điểm bắt đầu hoặc điểm đên cho chuyến đi bạn có chắc muốn thoát",
+                    "bạn chưa chọn điểm bắt đầu hoặc điểm đến cho chuyến đi bạn có chắc muốn thoát",
                     "Confirm",MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if(result == DialogResult.Yes) Close();
             }

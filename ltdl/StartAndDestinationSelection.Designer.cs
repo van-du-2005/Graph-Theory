@@ -57,9 +57,9 @@
             // 
             // btnOk
             // 
-            btnOk.BackColor = Color.FromArgb(128, 255, 128);
+            btnOk.BackColor = Color.Silver;
             btnOk.ForeColor = SystemColors.ActiveCaptionText;
-            btnOk.Location = new Point(154, 350);
+            btnOk.Location = new Point(165, 350);
             btnOk.Name = "btnOk";
             btnOk.Size = new Size(106, 47);
             btnOk.TabIndex = 2;
@@ -69,6 +69,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.BackColor = Color.White;
             groupBox1.Controls.Add(rdbLSt);
             groupBox1.Controls.Add(rdbBruSt);
             groupBox1.Controls.Add(rdbInSt);
@@ -198,6 +199,7 @@
             // 
             // groupBox3
             // 
+            groupBox3.BackColor = Color.White;
             groupBox3.Controls.Add(rdbLDtn);
             groupBox3.Controls.Add(rdbBruDtn);
             groupBox3.Controls.Add(rdbInDtn);
@@ -208,7 +210,7 @@
             groupBox3.Controls.Add(rdbMyanDtn);
             groupBox3.Controls.Add(rdbThaiDtn);
             groupBox3.Controls.Add(rdbPhilipDtnt);
-            groupBox3.Location = new Point(230, 23);
+            groupBox3.Location = new Point(250, 23);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(176, 321);
             groupBox3.TabIndex = 9;
@@ -329,13 +331,15 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(422, 403);
+            BackColor = Color.FromArgb(192, 255, 255);
+            ClientSize = new Size(438, 403);
             Controls.Add(groupBox3);
             Controls.Add(groupBox1);
             Controls.Add(btnOk);
+            MaximizeBox = false;
             Name = "StartAndDestinationSelection";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Start And Destination";
+            Text = "Chọn Điểm Bắt Đầu Và Kết Thúc";
             Load += StartAndDestinationSelection_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

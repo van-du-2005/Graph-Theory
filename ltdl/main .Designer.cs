@@ -30,8 +30,6 @@
         {
             panel1 = new Panel();
             btnStartAndDestination = new Button();
-            pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
             btnResult = new Button();
             richTextBox1 = new RichTextBox();
             ptbMyanmar = new PictureBox();
@@ -46,8 +44,6 @@
             ptbVietNam = new PictureBox();
             ptbQuocGia = new PictureBox();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ptbMyanmar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ptbThailand).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ptbCampudia).BeginInit();
@@ -64,13 +60,11 @@
             // panel1
             // 
             panel1.Controls.Add(btnStartAndDestination);
-            panel1.Controls.Add(pictureBox3);
-            panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(btnResult);
             panel1.Controls.Add(richTextBox1);
             panel1.Location = new Point(1, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(181, 736);
+            panel1.Size = new Size(180, 736);
             panel1.TabIndex = 12;
             // 
             // btnStartAndDestination
@@ -86,27 +80,6 @@
             btnStartAndDestination.UseVisualStyleBackColor = false;
             btnStartAndDestination.Click += btnStartAndDestination_Click;
             // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.cong;
-            pictureBox3.InitialImage = Properties.Resources.cong;
-            pictureBox3.Location = new Point(109, 578);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(92, 66);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 54;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources.tru;
-            pictureBox2.Location = new Point(10, 561);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(93, 66);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 53;
-            pictureBox2.TabStop = false;
-            // 
             // btnResult
             // 
             btnResult.BackColor = Color.Silver;
@@ -116,13 +89,13 @@
             btnResult.Name = "btnResult";
             btnResult.Size = new Size(169, 61);
             btnResult.TabIndex = 0;
-            btnResult.Text = "result";
+            btnResult.Text = "Tuyến đường có chi phí it nhất";
             btnResult.UseVisualStyleBackColor = false;
             btnResult.Click += button1_Click;
             // 
             // richTextBox1
             // 
-            richTextBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            richTextBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             richTextBox1.Location = new Point(3, 0);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.Size = new Size(169, 325);
@@ -133,9 +106,9 @@
             // ptbMyanmar
             // 
             ptbMyanmar.Image = Properties.Resources.myanmar;
-            ptbMyanmar.Location = new Point(288, 102);
+            ptbMyanmar.Location = new Point(282, 104);
             ptbMyanmar.Name = "ptbMyanmar";
-            ptbMyanmar.Size = new Size(92, 66);
+            ptbMyanmar.Size = new Size(108, 66);
             ptbMyanmar.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbMyanmar.TabIndex = 52;
             ptbMyanmar.TabStop = false;
@@ -144,9 +117,9 @@
             // ptbThailand
             // 
             ptbThailand.Image = Properties.Resources.thaiLan;
-            ptbThailand.Location = new Point(298, 241);
+            ptbThailand.Location = new Point(293, 244);
             ptbThailand.Name = "ptbThailand";
-            ptbThailand.Size = new Size(92, 66);
+            ptbThailand.Size = new Size(108, 66);
             ptbThailand.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbThailand.TabIndex = 50;
             ptbThailand.TabStop = false;
@@ -155,9 +128,9 @@
             // ptbCampudia
             // 
             ptbCampudia.Image = Properties.Resources.campuchia;
-            ptbCampudia.Location = new Point(393, 348);
+            ptbCampudia.Location = new Point(389, 346);
             ptbCampudia.Name = "ptbCampudia";
-            ptbCampudia.Size = new Size(92, 66);
+            ptbCampudia.Size = new Size(108, 66);
             ptbCampudia.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbCampudia.TabIndex = 51;
             ptbCampudia.TabStop = false;
@@ -166,9 +139,9 @@
             // ptbSingapore
             // 
             ptbSingapore.Image = Properties.Resources.singaporo;
-            ptbSingapore.Location = new Point(355, 512);
+            ptbSingapore.Location = new Point(351, 516);
             ptbSingapore.Name = "ptbSingapore";
-            ptbSingapore.Size = new Size(92, 66);
+            ptbSingapore.Size = new Size(113, 66);
             ptbSingapore.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbSingapore.TabIndex = 56;
             ptbSingapore.TabStop = false;
@@ -177,9 +150,9 @@
             // ptbIndonesia
             // 
             ptbIndonesia.Image = Properties.Resources.indonesia;
-            ptbIndonesia.Location = new Point(423, 632);
+            ptbIndonesia.Location = new Point(425, 633);
             ptbIndonesia.Name = "ptbIndonesia";
-            ptbIndonesia.Size = new Size(92, 66);
+            ptbIndonesia.Size = new Size(108, 66);
             ptbIndonesia.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbIndonesia.TabIndex = 55;
             ptbIndonesia.TabStop = false;
@@ -188,9 +161,9 @@
             // ptbMalaysia
             // 
             ptbMalaysia.Image = Properties.Resources.malaysia;
-            ptbMalaysia.Location = new Point(651, 441);
+            ptbMalaysia.Location = new Point(653, 435);
             ptbMalaysia.Name = "ptbMalaysia";
-            ptbMalaysia.Size = new Size(92, 60);
+            ptbMalaysia.Size = new Size(108, 66);
             ptbMalaysia.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbMalaysia.TabIndex = 54;
             ptbMalaysia.TabStop = false;
@@ -199,9 +172,9 @@
             // ptbBrunei
             // 
             ptbBrunei.Image = Properties.Resources.brunei;
-            ptbBrunei.Location = new Point(930, 485);
+            ptbBrunei.Location = new Point(933, 486);
             ptbBrunei.Name = "ptbBrunei";
-            ptbBrunei.Size = new Size(92, 66);
+            ptbBrunei.Size = new Size(108, 66);
             ptbBrunei.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbBrunei.TabIndex = 53;
             ptbBrunei.TabStop = false;
@@ -210,9 +183,9 @@
             // ptbPhilippines
             // 
             ptbPhilippines.Image = Properties.Resources.philipin;
-            ptbPhilippines.Location = new Point(1033, 217);
+            ptbPhilippines.Location = new Point(1031, 215);
             ptbPhilippines.Name = "ptbPhilippines";
-            ptbPhilippines.Size = new Size(92, 66);
+            ptbPhilippines.Size = new Size(108, 66);
             ptbPhilippines.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbPhilippines.TabIndex = 49;
             ptbPhilippines.TabStop = false;
@@ -221,9 +194,9 @@
             // ptbLao
             // 
             ptbLao.Image = Properties.Resources.lao;
-            ptbLao.Location = new Point(735, 146);
+            ptbLao.Location = new Point(733, 146);
             ptbLao.Name = "ptbLao";
-            ptbLao.Size = new Size(92, 66);
+            ptbLao.Size = new Size(108, 66);
             ptbLao.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbLao.TabIndex = 48;
             ptbLao.TabStop = false;
@@ -232,9 +205,9 @@
             // ptbVietNam
             // 
             ptbVietNam.Image = Properties.Resources.VN;
-            ptbVietNam.Location = new Point(763, 271);
+            ptbVietNam.Location = new Point(759, 272);
             ptbVietNam.Name = "ptbVietNam";
-            ptbVietNam.Size = new Size(92, 66);
+            ptbVietNam.Size = new Size(108, 66);
             ptbVietNam.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbVietNam.TabIndex = 47;
             ptbVietNam.TabStop = false;
@@ -245,7 +218,7 @@
             ptbQuocGia.Image = Properties.Resources.quocgia;
             ptbQuocGia.Location = new Point(179, 0);
             ptbQuocGia.Name = "ptbQuocGia";
-            ptbQuocGia.Size = new Size(996, 736);
+            ptbQuocGia.Size = new Size(1007, 736);
             ptbQuocGia.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbQuocGia.TabIndex = 46;
             ptbQuocGia.TabStop = false;
@@ -272,8 +245,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Load += Form1_Load;
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)ptbMyanmar).EndInit();
             ((System.ComponentModel.ISupportInitialize)ptbThailand).EndInit();
             ((System.ComponentModel.ISupportInitialize)ptbCampudia).EndInit();
@@ -303,8 +274,6 @@
         private PictureBox ptbVietNam;
         private PictureBox ptbQuocGia;
         private Button btnResult;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
         private RichTextBox richTextBox1;
         private Button btnStartAndDestination;
     }

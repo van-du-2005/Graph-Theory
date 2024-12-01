@@ -1,4 +1,7 @@
-﻿namespace ltdl
+﻿using System.Runtime.CompilerServices;
+using System.Web;
+
+namespace ltdl
 {
     public partial class Form1 : Form
     {
@@ -28,16 +31,38 @@
             this.w = int.MaxValue;
         }
 
+        void pictureClickEffrct(int picture, int Length)
+        {
+            if (picture == 0) ptbPhilippines.Size = new Size(Length, 66);
+            else if (picture == 1) ptbThailand.Size = new Size(Length, 66);
+            else if (picture == 2) ptbMyanmar.Size = new Size(Length, 66);
+            else if (picture == 3) ptbCampudia.Size = new Size(Length, 66);
+            else if (picture == 4) ptbSingapore.Size = new Size(Length, 66);
+            else if (picture == 5) ptbIndonesia.Size = new Size(Length, 66);
+            else if (picture == 6) ptbLao.Size = new Size(Length, 66);
+            else if (picture == 7) ptbVietNam.Size = new Size(Length, 66);
+            else if (picture == 8) ptbMalaysia.Size = new Size(Length, 66);
+            else if (picture == 9) ptbBrunei.Size = new Size(Length, 66);
+
+        }
         private void SaveVerticalClick()
         {
             InputWeight inputWeight = new InputWeight();
             if (u != -1 && v != -1)
-            {
+            {                
                 inputWeight.ShowDialog();
+                pictureClickEffrct(u, 108);
+                pictureClickEffrct(v, 108);
+                int ok = inputWeight.ok;
                 this.w = inputWeight.w;
-                this.dijkstra.addEdges(this.u, this.v, this.w);
+                if(ok == 1)
+                {
+                    this.dijkstra.addEdges(this.u, this.v, this.w);
+                    ptbQuocGia.Invalidate(); // Yêu cầu vẽ lại
+                }    
+                
                 reset();
-                ptbQuocGia.Invalidate(); // Yêu cầu vẽ lại
+
             }
         }
 
@@ -66,17 +91,57 @@
             }
         }
 
-        private void ptbThailand_Click(object sender, EventArgs e) { UpdateCoordinates(1); }
-        private void ptbLao_Click(object sender, EventArgs e) { UpdateCoordinates(6); }
-        private void ptbCampudia_Click(object sender, EventArgs e) { UpdateCoordinates(3); }
-        private void ptbSingapore_Click(object sender, EventArgs e) { UpdateCoordinates(4); }
-        private void ptbIndonesia_Click(object sender, EventArgs e) { UpdateCoordinates(5); }
-        private void ptbMalaysia_Click(object sender, EventArgs e) { UpdateCoordinates(8); }
-        private void ptbBrunei_Click(object sender, EventArgs e) { UpdateCoordinates(9); }
-        private void ptbPhilippines_Click(object sender, EventArgs e) { UpdateCoordinates(0); }
-        private void ptbMyanmar_Click(object sender, EventArgs e) { UpdateCoordinates(2); }
+        private void ptbThailand_Click(object sender, EventArgs e) 
+        {
+            pictureClickEffrct(1, 100);
+            UpdateCoordinates(1); 
+        }
+        private void ptbLao_Click(object sender, EventArgs e) 
+        {
+            pictureClickEffrct(6, 100);
+            UpdateCoordinates(6); 
+        }
+        private void ptbCampudia_Click(object sender, EventArgs e) 
+        {
+            pictureClickEffrct(3, 100);
+            UpdateCoordinates(3); 
+        }
+        private void ptbSingapore_Click(object sender, EventArgs e) 
+        {
+            pictureClickEffrct(4, 100);
+            UpdateCoordinates(4); 
+        }
+        private void ptbIndonesia_Click(object sender, EventArgs e) 
+        {
+            pictureClickEffrct(5, 100);
+            UpdateCoordinates(5); 
+        }
+        private void ptbMalaysia_Click(object sender, EventArgs e) 
+        {
+            pictureClickEffrct(8, 100);
+            UpdateCoordinates(8); 
+        }
+        private void ptbBrunei_Click(object sender, EventArgs e) 
+        {
+            pictureClickEffrct(9, 100);
+            UpdateCoordinates(9); 
+        }
+        private void ptbPhilippines_Click(object sender, EventArgs e) 
+        {
+            pictureClickEffrct(0, 100);
+            UpdateCoordinates(0); 
+        }
+        private void ptbMyanmar_Click(object sender, EventArgs e)
+        {
+            pictureClickEffrct(2, 100);
+            UpdateCoordinates(2); 
+        }
 
-        private void ptbVietNam_Click(object sender, EventArgs e) { UpdateCoordinates(7); }
+        private void ptbVietNam_Click(object sender, EventArgs e) 
+        {
+            pictureClickEffrct(7, 100);
+            UpdateCoordinates(7); 
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             int start = _startAndDestinationSelection.Start;
@@ -88,7 +153,7 @@
             else
             {
                 dijkstra.result(start, destination);
-                richTextBox1.Text = $"các quốc gia đi qua: {dijkstra._strPath}\nchi phí ít nhất phải trả: {dijkstra._strMoneyMin}";
+                richTextBox1.Text = $"các quốc gia đi qua:\n{dijkstra._strPath}\nchi phí ít nhất phải trả: {dijkstra._strMoneyMin}";
             }
         }
 
