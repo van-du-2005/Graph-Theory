@@ -48,12 +48,12 @@ namespace ltdl
             }
             result[s] = new Pair(0, s);
 
-            var pq = new SortedSet<(int distance, int vertices)>();
-            pq.Add((0, s));
-            while (pq.Count > 0)
+            var sSet = new SortedSet<(int distance, int vertices)>();
+            sSet.Add((0, s));
+            while (sSet.Count > 0)
             {
-                var current = pq.First();
-                pq.Remove(current);
+                var current = sSet.First();
+                sSet.Remove(current);
 
                 int currentVertex = current.vertices;
                 int currentDistance = current.distance;
@@ -66,11 +66,14 @@ namespace ltdl
                     int newDistance = currentDistance + weight;
                     if (newDistance < result[v].Value1)
                     {
+                        // xóa phần tử trùng.
+                        sSet.Remove((newDistance, v));
+
                         result[v].Value1 = newDistance;
                         result[v].Value2 = currentVertex;
                     }
 
-                    pq.Add((newDistance, v));
+                    sSet.Add((newDistance, v));
                 }
 
                 visited[currentVertex] = 1;
