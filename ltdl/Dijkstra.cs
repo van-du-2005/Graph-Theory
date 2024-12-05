@@ -58,7 +58,6 @@ namespace ltdl
                 int currentVertex = current.vertices;
                 int currentDistance = current.distance;
 
-
                 if (visited[currentVertex] == 1) continue;
 
                 foreach (var (v, weight) in _adijacencyList[currentVertex])
@@ -72,15 +71,11 @@ namespace ltdl
                         result[v].Value1 = newDistance;
                         result[v].Value2 = currentVertex;
                     }
-
                     sSet.Add((newDistance, v));
                 }
-
                 visited[currentVertex] = 1;
             }
-
             return result;
-
         }
 
         // chuyển số thành tên quốc gia.

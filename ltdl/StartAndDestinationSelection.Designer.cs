@@ -85,7 +85,7 @@
             groupBox1.Size = new Size(176, 321);
             groupBox1.TabIndex = 8;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Start";
+            groupBox1.Text = "Điểm xuất phát";
             // 
             // rdbLSt
             // 
@@ -215,7 +215,7 @@
             groupBox3.Size = new Size(176, 321);
             groupBox3.TabIndex = 9;
             groupBox3.TabStop = false;
-            groupBox3.Text = "Destination";
+            groupBox3.Text = "Điểm đến";
             // 
             // rdbLDtn
             // 
