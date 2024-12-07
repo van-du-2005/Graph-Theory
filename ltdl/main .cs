@@ -29,6 +29,8 @@ namespace ltdl
             this.u = -1;
             this.v = -1;
             this.w = int.MaxValue;
+            x1 = -1; y1 = -1;
+            x2 = -1; y2 = -1;
         }
 
         void pictureClickEffrct(int picture, int Length)
@@ -57,10 +59,10 @@ namespace ltdl
                 this.w = inputWeight.w;
                 if(ok == 1)
                 {
+                    locations.Add(new LocationXY(x1, y1, x2, y2,inputWeight.w));
                     this.dijkstra.addEdges(this.u, this.v, this.w);
                     ptbQuocGia.Invalidate(); // Yêu cầu vẽ lại
-                }    
-                
+                }
                 reset();
 
             }
@@ -80,7 +82,7 @@ namespace ltdl
                 // Sử dụng clientPoint thay vì mousePosition để tính toán tọa độ trong PictureBox
                 x2 = clientPoint.X; // Lưu tọa độ X trong không gian của PictureBox
                 y2 = clientPoint.Y; // Lưu tọa độ Y trong không gian của PictureBox
-                locations.Add(new LocationXY(x1, y1, x2, y2));
+
                 SaveVerticalClick();
             }
             else
@@ -161,6 +163,10 @@ namespace ltdl
         {
             Graphics g = e.Graphics;
 
+            // Tạo font và brush để vẽ văn bản
+            Font font = new Font("Arial", 15, FontStyle.Bold);
+            Brush brush = Brushes.Blue; // Màu văn bản
+
             // Lặp qua danh sách và vẽ mỗi đường thẳng
             foreach (var line in locations)
             {
@@ -171,6 +177,14 @@ namespace ltdl
 
                 // Vẽ đường thẳng từ (x1, y1) đến (x2, y2)
                 g.DrawLine(pen, new Point(line.x1, line.y1), new Point(line.x2, line.y2));
+
+                // Tính toán vị trí trung tâm của đường thẳng
+                int centerX = (line.x1 + line.x2) / 2;
+                int centerY = (line.y1 + line.y2) / 2;
+
+                // Ghi số hoặc văn bản trên đường thẳng
+                string text = $"{line.w}"; // Tùy chỉnh nội dung
+                g.DrawString(text, font, brush, centerX, centerY);
             }
         }
         private void richTextBox1_TextChanged(object sender, EventArgs e)
