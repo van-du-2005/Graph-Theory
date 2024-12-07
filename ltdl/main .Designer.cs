@@ -98,7 +98,7 @@
             richTextBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             richTextBox1.Location = new Point(3, 0);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(169, 325);
+            richTextBox1.Size = new Size(177, 325);
             richTextBox1.TabIndex = 55;
             richTextBox1.Text = "";
             richTextBox1.TextChanged += richTextBox1_TextChanged;
