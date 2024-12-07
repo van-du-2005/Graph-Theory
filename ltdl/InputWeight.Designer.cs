@@ -63,13 +63,13 @@
             // 
             // label1
             // 
-            label1.BackColor = Color.FromArgb(128, 255, 255);
+            label1.BackColor = Color.White;
             label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             label1.Location = new Point(66, 20);
             label1.Name = "label1";
             label1.Size = new Size(220, 27);
             label1.TabIndex = 2;
-            label1.Text = "mời bạn nhập chi phí:";
+            label1.Text = "Mời bạn nhập chi phí:";
             // 
             // button2
             // 
@@ -111,7 +111,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(128, 255, 255);
+            BackColor = Color.White;
             ClientSize = new Size(364, 153);
             Controls.Add(ptbCong);
             Controls.Add(ptbTru);

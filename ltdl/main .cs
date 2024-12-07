@@ -164,8 +164,8 @@ namespace ltdl
             Graphics g = e.Graphics;
 
             // Tạo font và brush để vẽ văn bản
-            Font font = new Font("Arial", 15, FontStyle.Bold);
-            Brush brush = Brushes.Blue; // Màu văn bản
+            Font font = new Font("Arial", 20, FontStyle.Bold);
+            Brush brush = Brushes.Purple; // Màu văn bản
 
             // Lặp qua danh sách và vẽ mỗi đường thẳng
             foreach (var line in locations)
@@ -184,9 +184,20 @@ namespace ltdl
 
                 // Ghi số hoặc văn bản trên đường thẳng
                 string text = $"{line.w}"; // Tùy chỉnh nội dung
-                g.DrawString(text, font, brush, centerX, centerY);
+
+                // Tính kích thước của văn bản
+                SizeF textSize = g.MeasureString(text, font);
+
+                // Căn chỉnh sao cho chữ đè lên đường thẳng
+                float textX = centerX - (textSize.Width / 2);
+                float textY = centerY - (textSize.Height / 2); // Giữ đúng tâm của đường thẳng
+              
+
+                g.DrawString(text, font, brush, textX, textY);
             }
         }
+
+
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
