@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\source\\repos\\Graph Theory\\ltdl\\ltdl.csproj": {}
+    "C:\\Users\\ADMIN\\source\\repos\\graph theory main\\ltdl\\ltdl.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\source\\repos\\Graph Theory\\ltdl\\ltdl.csproj": {
+    "C:\\Users\\ADMIN\\source\\repos\\graph theory main\\ltdl\\ltdl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\source\\repos\\Graph Theory\\ltdl\\ltdl.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\source\\repos\\graph theory main\\ltdl\\ltdl.csproj",
         "projectName": "ltdl",
-        "projectPath": "C:\\Users\\ADMIN\\source\\repos\\Graph Theory\\ltdl\\ltdl.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\source\\repos\\graph theory main\\ltdl\\ltdl.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\source\\repos\\Graph Theory\\ltdl\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\source\\repos\\graph theory main\\ltdl\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

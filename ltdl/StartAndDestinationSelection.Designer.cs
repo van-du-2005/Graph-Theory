@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartAndDestinationSelection));
             btnOk = new Button();
             groupBox1 = new GroupBox();
             rdbLSt = new RadioButton();
@@ -336,7 +337,9 @@
             Controls.Add(groupBox3);
             Controls.Add(groupBox1);
             Controls.Add(btnOk);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
+            MaximumSize = new Size(456, 450);
             Name = "StartAndDestinationSelection";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Chọn Điểm Bắt Đầu Và Kết Thúc";

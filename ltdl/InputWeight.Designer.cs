@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InputWeight));
             button1 = new Button();
             textChiPhi = new RichTextBox();
             label1 = new Label();
@@ -119,8 +120,9 @@
             Controls.Add(label1);
             Controls.Add(textChiPhi);
             Controls.Add(button1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            MinimizeBox = false;
+            MaximumSize = new Size(382, 200);
             Name = "InputWeight";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Nhập Chi Phí";

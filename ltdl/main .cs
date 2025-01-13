@@ -150,7 +150,7 @@ namespace ltdl
             int destination = _startAndDestinationSelection.Destination;
             if (start == -1 || destination == -1)
             {
-                MessageBox.Show("Bạn chưa chọn điểm bắt đầu hoặc điểm điểm của chuyến du lịch.");
+                MessageBox.Show("Bạn chưa chọn điểm bắt đầu hoặc điểm đến của chuyến du lịch.");
             }
             else
             {
